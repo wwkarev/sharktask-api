@@ -1,5 +1,7 @@
 package com.github.wwkarev.sharktask.api.task
 
+import com.github.wwkarev.sharktask.api.params.Params
+
 interface TaskCreator {
-    abstract MutableTask create()
+    MutableTask create(Long projectId, Long taskTypeId, Params params)
 }

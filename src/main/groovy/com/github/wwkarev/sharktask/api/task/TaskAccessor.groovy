@@ -1,5 +1,9 @@
 package com.github.wwkarev.sharktask.api.task
 
 interface TaskAccessor {
-    abstract MutableTask getTaskById(Long taskId)
+    MutableTask getById(Long id)
+    MutableTask getByKey(String key)
+
+    MutableTask getAtById(Long id)
+    MutableTask getAtByKey(String key)
 }

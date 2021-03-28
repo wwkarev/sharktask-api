@@ -1,6 +1,8 @@
 package com.github.wwkarev.sharktask.api.project
 
 interface ProjectAccessor {
-    abstract Project getById(Long id)
-    abstract Project getByKey(String key)
+    Project getById(Long id)
+    Project getByKey(String key)
+    Project getAtById(Long id)
+    Project getAtByKey(String key)
 }

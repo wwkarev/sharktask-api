@@ -2,5 +2,6 @@ package com.github.wwkarev.sharktask.api.tasktype
 
 
 interface TaskTypeAccessor {
-    abstract TaskType getById(Long id)
+    TaskType getById(Long id)
+    TaskType getAtById(Long id)
 }

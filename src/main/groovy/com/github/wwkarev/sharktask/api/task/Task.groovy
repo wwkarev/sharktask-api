@@ -21,8 +21,8 @@ interface Task {
     abstract Date getCreatedDate()
 
     abstract Object getFieldValue(Long fieldId)
-    abstract List<Long> getInwardLinkedTaskId(Long linkTypeId)
-    abstract List<Long> getOutwardLinkedTaskId(Long linkTypeId)
+    abstract List<Task> getInwardLinkedTaskId(Long linkTypeId)
+    abstract List<Task> getOutwardLinkedTaskId(Long linkTypeId)
     abstract List<Attachment> getAttachments()
     abstract List<Comment> getComments()
 }
